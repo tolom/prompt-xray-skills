@@ -12,6 +12,22 @@ Good prompts should be clear, structured, testable, reusable, and resistant to m
 
 Prompt X-Ray Skills help you design prompts like small software systems.
 
+## Try this in 5 minutes
+
+Use the repository as a practical workflow, not as a reading list.
+
+1. Open [`examples/before-after/simple-support-prompt.md`](examples/before-after/simple-support-prompt.md).
+2. Copy the weak prompt.
+3. Run [`skills/02-prompt-auditor/SKILL.md`](skills/02-prompt-auditor/SKILL.md) on it.
+4. Compare the audit with the improved prompt in the example.
+5. Run [`skills/07-prompt-test-generator/SKILL.md`](skills/07-prompt-test-generator/SKILL.md) to create quality-check cases.
+
+Recommended first path:
+
+```text
+weak prompt -> prompt audit -> improved prompt -> quality-check cases -> reusable prompt
+```
+
 ## What this is
 
 A collection of practical LLM skills for:
@@ -80,6 +96,48 @@ skills/
 6. Use `08-prompt-debugger` when real outputs fail.
 7. Convert stable workflows into specs or agent rules when needed.
 
+## Example workflows
+
+### Improve a weak prompt
+
+```text
+01-prompt-brief-builder -> 02-prompt-auditor -> 07-prompt-test-generator
+```
+
+Use this when you have a vague prompt and want to make it reusable.
+
+### Create a system prompt for an assistant
+
+```text
+01-prompt-brief-builder -> 03-system-prompt-architect -> 02-prompt-auditor
+```
+
+Use this for support bots, sales assistants, internal AI tools, and website assistants.
+
+### Prepare instructions for a coding agent
+
+```text
+04-agent-instruction-writer -> 02-prompt-auditor -> 07-prompt-test-generator
+```
+
+Use this for `CLAUDE.md`, `AGENTS.md`, Cursor rules, Codex instructions, and repository-specific AI workflows.
+
+### Build a RAG answer policy
+
+```text
+05-rag-answer-policy -> 03-system-prompt-architect -> 07-prompt-test-generator
+```
+
+Use this for knowledge-base bots, course assistants, documentation assistants, and customer-support RAG systems.
+
+### Convert an AI idea into a product spec
+
+```text
+01-prompt-brief-builder -> 09-prompt-to-product-spec
+```
+
+Use this when a prompt or assistant concept needs to become an MVP task for a developer or coding agent.
+
 ## Who this is for
 
 - AI builders
@@ -99,6 +157,16 @@ You can copy a skill folder into an LLM environment that supports skill-style wo
 
 The skills are intentionally practical and implementation-oriented. They are designed to produce usable artifacts: prompt briefs, audits, rewritten prompts, schemas, test cases, policies, and product specs.
 
+## Examples
+
+- [`examples/before-after/simple-support-prompt.md`](examples/before-after/simple-support-prompt.md)
+- [`examples/before-after/lead-research-prompt.md`](examples/before-after/lead-research-prompt.md)
+- [`examples/before-after/prompt-brief-builder-example.md`](examples/before-after/prompt-brief-builder-example.md)
+- [`examples/business-assistant/system-prompt.md`](examples/business-assistant/system-prompt.md)
+- [`examples/coding-agent/AGENTS.md`](examples/coding-agent/AGENTS.md)
+- [`examples/rag-assistant/support-answer-policy.md`](examples/rag-assistant/support-answer-policy.md)
+- [`examples/structured-output/lead-qualification-schema.md`](examples/structured-output/lead-qualification-schema.md)
+
 ## Design principles
 
 See [`docs/principles.md`](docs/principles.md).
@@ -107,9 +175,9 @@ See [`docs/principles.md`](docs/principles.md).
 
 See [`docs/skill-authoring-guide.md`](docs/skill-authoring-guide.md).
 
-## Examples
+## Launch notes
 
-See [`examples/`](examples/).
+See [`docs/launch-post.md`](docs/launch-post.md).
 
 ## License
 
