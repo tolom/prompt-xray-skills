@@ -1,6 +1,8 @@
 # Prompt X-Ray Skills
 
-Reusable `SKILL.md` workflows for writing, auditing, testing, and hardening LLM prompts.
+**Stop shipping fragile prompts. X-Ray them first.**
+
+Reusable `SKILL.md` workflows for writing, auditing, testing, and hardening LLM prompts before they become part of real products, agents, automations, support bots, RAG systems, or coding workflows.
 
 Most prompt engineering resources teach tips, tricks, and example prompts.
 
@@ -11,6 +13,60 @@ This repository takes a different approach:
 Good prompts should be clear, structured, testable, reusable, and resistant to missing context, ambiguity, hallucination, weak output contracts, and instruction drift.
 
 Prompt X-Ray Skills help you design prompts like small software systems.
+
+## What it does
+
+```text
+weak prompt -> X-Ray audit -> improved prompt -> test cases -> reusable workflow
+```
+
+Instead of collecting "magic prompts", this skill pack helps you produce practical artifacts:
+
+- prompt briefs;
+- prompt audit reports;
+- rewritten production-ready prompts;
+- system prompts;
+- agent instructions;
+- RAG answer policies;
+- structured output schemas;
+- prompt test cases;
+- prompt debugging reports;
+- product specifications for AI assistants and workflows.
+
+## Example: weak prompt to reliable prompt
+
+Weak prompt:
+
+```text
+You are a helpful support assistant. Answer customer questions professionally and provide useful information. If you don't know something, be honest.
+```
+
+Prompt X-Ray flags the hidden risks:
+
+| Area | Finding |
+|---|---|
+| Scope | The assistant's responsibility is undefined. |
+| Source of truth | The prompt does not say what information the assistant should rely on. |
+| Output contract | No required structure is defined. |
+| Uncertainty behavior | "Be honest" is too vague for production use. |
+| Escalation | No rule exists for account, billing, refund, or unsupported cases. |
+| Testability | There are no pass/fail cases. |
+
+Improved prompt includes:
+
+```text
+Mission
+Source of Truth
+Scope
+Workflow
+Style
+Output Format
+Missing Information Behavior
+Escalation Rules
+Test Cases
+```
+
+See the full before/after example: [`examples/before-after/simple-support-prompt.md`](examples/before-after/simple-support-prompt.md).
 
 ## Try this in 5 minutes
 
