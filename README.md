@@ -28,6 +28,31 @@ Recommended first path:
 weak prompt -> prompt audit -> improved prompt -> quality-check cases -> reusable prompt
 ```
 
+## Installation and usage
+
+See [`docs/installation.md`](docs/installation.md) for platform-specific setup:
+
+- Claude Code
+- Claude.ai / Claude app
+- Codex
+- Cursor
+- ChatGPT Projects
+- manual usage in any LLM
+
+Short version:
+
+```bash
+git clone https://github.com/tolom/prompt-xray-skills.git
+mkdir -p ~/.claude/skills
+cp -r prompt-xray-skills/skills/* ~/.claude/skills/
+```
+
+Then ask Claude Code:
+
+```text
+Audit this prompt using prompt-auditor.
+```
+
 ## What this is
 
 A collection of practical LLM skills for:
