@@ -205,7 +205,7 @@ Use when a prompt or assistant idea should become a product specification or MVP
 Typical triggers:
 
 - "Turn this AI idea into a spec"
-- "Make a TЗ for this assistant"
+- "Create a product spec for this assistant"
 - "Convert this prompt into a product feature"
 - "Prepare this for a developer"
 
