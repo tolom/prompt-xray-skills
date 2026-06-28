@@ -30,6 +30,13 @@ weak prompt -> prompt audit -> improved prompt -> quality-check cases -> reusabl
 
 ## Installation and usage
 
+This repository supports two styles:
+
+1. **Router skill** — use the root [`SKILL.md`](SKILL.md) as one entry point for the whole skill pack.
+2. **Individual skills** — use separate folders from [`skills/`](skills/) when you want narrow activation.
+
+See [`docs/router-skill.md`](docs/router-skill.md) for the short router guide.
+
 See [`docs/installation.md`](docs/installation.md) for platform-specific setup:
 
 - Claude Code
@@ -39,15 +46,13 @@ See [`docs/installation.md`](docs/installation.md) for platform-specific setup:
 - ChatGPT Projects
 - manual usage in any LLM
 
-Short version:
+Router usage example:
 
-```bash
-git clone https://github.com/tolom/prompt-xray-skills.git
-mkdir -p ~/.claude/skills
-cp -r prompt-xray-skills/skills/* ~/.claude/skills/
+```text
+Use prompt-xray-skills to audit this prompt.
 ```
 
-Then ask Claude Code:
+Individual skill usage example:
 
 ```text
 Audit this prompt using prompt-auditor.
