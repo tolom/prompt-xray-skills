@@ -1,0 +1,64 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt X-Ray workflow preview</title>
+  <desc id="desc">A dark dashboard-style preview showing a weak prompt being audited, rewritten, tested, and converted into a reusable prompt workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070B14"/>
+      <stop offset="0.5" stop-color="#101827"/>
+      <stop offset="1" stop-color="#171022"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="34" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="620" rx="32" fill="url(#bg)"/>
+  <circle cx="1070" cy="76" r="250" fill="#A78BFA" opacity="0.12"/>
+  <circle cx="120" cy="575" r="270" fill="#38BDF8" opacity="0.10"/>
+  <path d="M78 122 C270 34, 380 178, 552 102 C720 28, 862 96, 1094 42" stroke="url(#accent)" stroke-width="2" opacity="0.25"/>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="78" width="1024" height="464" rx="28" fill="#0D1322" stroke="#293247"/>
+    <rect x="88" y="78" width="1024" height="64" rx="28" fill="#090E1A"/>
+    <circle cx="126" cy="110" r="7" fill="#EF4444"/>
+    <circle cx="150" cy="110" r="7" fill="#F59E0B"/>
+    <circle cx="174" cy="110" r="7" fill="#22C55E"/>
+    <text x="216" y="117" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">Prompt X-Ray Skills · Prompt reliability workflow</text>
+
+    <text x="128" y="194" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="900">Your prompt is a behavior spec</text>
+    <text x="128" y="228" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="17">Audit, rewrite, and test prompts before they become product behavior.</text>
+
+    <rect x="128" y="272" width="224" height="156" rx="22" fill="#111827" stroke="#374151"/>
+    <text x="152" y="309" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800">WEAK PROMPT</text>
+    <text x="152" y="346" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">Be helpful.</text>
+    <text x="152" y="370" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">Answer professionally.</text>
+    <text x="152" y="394" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">If unsure, be honest.</text>
+
+    <path d="M368 350 H426" stroke="#64748B" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M418 342 L428 350 L418 358" stroke="#64748B" stroke-width="2"/>
+
+    <rect x="444" y="272" width="280" height="156" rx="22" fill="#111827" stroke="#374151"/>
+    <text x="468" y="309" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800">X-RAY FINDINGS</text>
+    <circle cx="476" cy="342" r="5" fill="#F97316"/><text x="492" y="348" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">Undefined scope</text>
+    <circle cx="476" cy="374" r="5" fill="#F97316"/><text x="492" y="380" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">Missing source of truth</text>
+    <circle cx="476" cy="406" r="5" fill="#F97316"/><text x="492" y="412" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">No test cases</text>
+
+    <path d="M740 350 H798" stroke="#64748B" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M790 342 L800 350 L790 358" stroke="#64748B" stroke-width="2"/>
+
+    <rect x="816" y="272" width="248" height="156" rx="22" fill="#111827" stroke="#374151"/>
+    <text x="840" y="309" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800">RELIABLE PROMPT</text>
+    <text x="840" y="344" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">Mission + scope</text>
+    <text x="840" y="372" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">Output contract</text>
+    <text x="840" y="400" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">Uncertainty behavior</text>
+
+    <rect x="128" y="466" width="936" height="28" rx="14" fill="#090E1A" stroke="#293247"/>
+    <rect x="128" y="466" width="674" height="28" rx="14" fill="url(#accent)" opacity="0.82"/>
+    <text x="128" y="556" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14">Weak prompt → Audit → Rewrite → Test cases → Reusable workflow</text>
+  </g>
+</svg>
