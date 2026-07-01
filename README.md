@@ -1,37 +1,65 @@
 # Prompt X-Ray Skills
 
-**Stop shipping fragile prompts. X-Ray them first.**
+**Your prompt works in demos, then fails in production. X-Ray it first.**
 
-Reusable `SKILL.md` workflows for writing, auditing, testing, and hardening LLM prompts before they become part of real products, agents, automations, support bots, RAG systems, or coding workflows.
+Prompt X-Ray Skills is a practical `SKILL.md` workflow pack for auditing, rewriting, testing, and hardening prompts used in real AI systems:
 
-Most prompt engineering resources teach tips, tricks, and example prompts.
+- AI assistants
+- support bots
+- RAG applications
+- coding agents
+- structured-output pipelines
+- automations
+- internal AI tools
 
-This repository takes a different approach:
+Most prompt resources give you examples.
 
-> A prompt is a behavioral specification for an AI system.
+Prompt X-Ray treats a prompt as a behavioral specification for an AI system.
 
-Good prompts should be clear, structured, testable, reusable, and resistant to missing context, ambiguity, hallucination, weak output contracts, and instruction drift.
+That means a production prompt should define scope, source of truth, decision rules, output contract, uncertainty behavior, escalation paths, and test cases.
 
-Prompt X-Ray Skills help you design prompts like small software systems.
+<p align="center">
+  <img src="docs/assets/prompt-xray-hero.svg" alt="Prompt X-Ray workflow preview" />
+</p>
 
-## What it does
+<p align="center">
+  <img alt="Status: skill pack" src="https://img.shields.io/badge/status-skill_pack-blue" />
+  <img alt="Prompt testing" src="https://img.shields.io/badge/prompt_testing-included-green" />
+  <img alt="RAG policies" src="https://img.shields.io/badge/RAG_policies-included-purple" />
+  <img alt="Agent instructions" src="https://img.shields.io/badge/agent_instructions-included-orange" />
+  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-lightgrey" />
+</p>
 
 ```text
 weak prompt -> X-Ray audit -> improved prompt -> test cases -> reusable workflow
 ```
 
-Instead of collecting "magic prompts", this skill pack helps you produce practical artifacts:
+## Use this when you need to
 
-- prompt briefs;
-- prompt audit reports;
-- rewritten production-ready prompts;
-- system prompts;
-- agent instructions;
-- RAG answer policies;
-- structured output schemas;
-- prompt test cases;
-- prompt debugging reports;
-- product specifications for AI assistants and workflows.
+- audit a weak prompt before using it in production;
+- write a system prompt for an AI assistant;
+- create `AGENTS.md`, `CLAUDE.md`, Cursor rules, or Codex instructions;
+- define a RAG answer policy with citation and no-answer rules;
+- design JSON / structured output that software can parse;
+- generate prompt test cases and edge cases;
+- debug bad LLM outputs;
+- turn an AI assistant idea into a product spec.
+
+## Try this in 5 minutes
+
+Use the repository as a practical workflow, not as a reading list.
+
+1. Open [`examples/before-after/simple-support-prompt.md`](examples/before-after/simple-support-prompt.md).
+2. Copy the weak prompt.
+3. Run [`skills/02-prompt-auditor/SKILL.md`](skills/02-prompt-auditor/SKILL.md) on it.
+4. Compare the audit with the improved prompt in the example.
+5. Run [`skills/07-prompt-test-generator/SKILL.md`](skills/07-prompt-test-generator/SKILL.md) to create quality-check cases.
+
+Recommended first path:
+
+```text
+weak prompt -> prompt audit -> improved prompt -> quality-check cases -> reusable prompt
+```
 
 ## Example: weak prompt to reliable prompt
 
@@ -68,21 +96,20 @@ Test Cases
 
 See the full before/after example: [`examples/before-after/simple-support-prompt.md`](examples/before-after/simple-support-prompt.md).
 
-## Try this in 5 minutes
+## What you get
 
-Use the repository as a practical workflow, not as a reading list.
+Instead of collecting "magic prompts", this skill pack helps you produce practical artifacts:
 
-1. Open [`examples/before-after/simple-support-prompt.md`](examples/before-after/simple-support-prompt.md).
-2. Copy the weak prompt.
-3. Run [`skills/02-prompt-auditor/SKILL.md`](skills/02-prompt-auditor/SKILL.md) on it.
-4. Compare the audit with the improved prompt in the example.
-5. Run [`skills/07-prompt-test-generator/SKILL.md`](skills/07-prompt-test-generator/SKILL.md) to create quality-check cases.
-
-Recommended first path:
-
-```text
-weak prompt -> prompt audit -> improved prompt -> quality-check cases -> reusable prompt
-```
+- prompt briefs;
+- prompt audit reports;
+- rewritten production-ready prompts;
+- system prompts;
+- agent instructions;
+- RAG answer policies;
+- structured output schemas;
+- prompt test cases;
+- prompt debugging reports;
+- product specifications for AI assistants and workflows.
 
 ## Installation and usage
 
@@ -116,17 +143,9 @@ Audit this prompt using prompt-auditor.
 
 ## What this is
 
-A collection of practical LLM skills for:
+A prompt reliability toolkit for people building with LLMs.
 
-- turning rough ideas into prompt briefs;
-- auditing weak prompts;
-- designing system prompts;
-- writing agent instructions;
-- creating RAG answer policies;
-- designing structured outputs;
-- generating prompt test cases;
-- debugging bad model responses;
-- converting AI assistant ideas into product specifications.
+It helps you turn rough prompt text into something closer to a small software specification: scoped, testable, reusable, and easier to debug.
 
 ## What this is not
 
@@ -245,6 +264,10 @@ The skills are intentionally practical and implementation-oriented. They are des
 
 ## Examples
 
+See [`examples/README.md`](examples/README.md) for a guided example catalog.
+
+Quick links:
+
 - [`examples/before-after/simple-support-prompt.md`](examples/before-after/simple-support-prompt.md)
 - [`examples/before-after/lead-research-prompt.md`](examples/before-after/lead-research-prompt.md)
 - [`examples/before-after/prompt-brief-builder-example.md`](examples/before-after/prompt-brief-builder-example.md)
@@ -264,6 +287,14 @@ See [`docs/skill-authoring-guide.md`](docs/skill-authoring-guide.md).
 ## Launch notes
 
 See [`docs/launch-post.md`](docs/launch-post.md).
+
+## Repository topics to consider
+
+If you maintain this repository, consider adding these GitHub topics for discovery:
+
+```text
+prompt-engineering llm ai-agents system-prompts rag structured-output claude-code codex cursor agents-md prompt-testing prompt-evals ai-workflows
+```
 
 ## License
 
